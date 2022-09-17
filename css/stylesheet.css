@@ -213,11 +213,6 @@ header.masthead h3{
 	margin-bottom: 50px;
 }
 
-#about .about-container .closed,
-#about .about-container .opened {
-    transition-duration: 2s;
-}
-
 #about .about-container div {
     position: relative;
 }

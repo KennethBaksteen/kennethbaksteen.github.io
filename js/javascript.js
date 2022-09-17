@@ -12,15 +12,23 @@ function openEducation(educ) {
     parent = document.getElementById(educ)
     if(parent.classList.contains("closed")) {
         for(child of parent.children){
-            child.classList.remove("d-none");    
-        }      
+            child.classList.remove("d-none"); 
+            if(child.classList.contains("fa-chevron-down")) {
+                child.classList.remove("fa-chevron-down")
+                child.classList.add("fa-chevron-up")
+            }   
+        }
         parent.classList.remove("closed")
-        parent.classList.add("opened")
+        parent.classList.add("opened")            
     } else if(parent.classList.contains("opened")) {
         for(child of parent.children){
             if(child.tagName == "P" && !(child.classList.contains("show"))) {
                 child.classList.add("d-none");                
             }
+            else if(child.classList.contains("fa-chevron-up")) {
+                child.classList.remove("fa-chevron-up")
+                child.classList.add("fa-chevron-down")
+            }   
         }     
         parent.classList.remove("opened")
         parent.classList.add("closed")
