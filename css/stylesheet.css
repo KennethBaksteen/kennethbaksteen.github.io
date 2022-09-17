@@ -5,7 +5,7 @@
 }
 
 body{
-	font-family: "Lora", Serif;
+	font-family: "Montserrat", Serif;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -207,6 +207,15 @@ header.masthead h3{
 	header.masthead h2{
 	   font-size: 1.75em;
 	}
+}
+
+#about .about-container {
+	margin-bottom: 50px;
+}
+
+#about .about-container .closed,
+#about .about-container .opened {
+    transition-duration: 2s;
 }
 
 #about .about-container div {
