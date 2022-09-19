@@ -10,27 +10,17 @@
                 
 function openEducation(educ) {
     parent = document.getElementById(educ)
-    if(parent.classList.contains("closed")) {
-        for(child of parent.children){
-            child.classList.remove("d-none"); 
-            if(child.classList.contains("fa-chevron-down")) {
-                child.classList.remove("fa-chevron-down")
-                child.classList.add("fa-chevron-up")
-            }   
-        }
-        parent.classList.remove("closed")
-        parent.classList.add("opened")            
-    } else if(parent.classList.contains("opened")) {
-        for(child of parent.children){
-            if(child.tagName == "P" && !(child.classList.contains("show"))) {
-                child.classList.add("d-none");                
-            }
-            else if(child.classList.contains("fa-chevron-up")) {
-                child.classList.remove("fa-chevron-up")
-                child.classList.add("fa-chevron-down")
-            }   
-        }     
-        parent.classList.remove("opened")
-        parent.classList.add("closed")
+    extraInfo = parent.querySelector(".extra-info")
+    icon = parent.querySelector(".fa")
+    if(extraInfo.classList.contains("closed")) {
+        icon.classList.remove("down")
+        icon.classList.add("up")
+        extraInfo.classList.remove("closed")
+        extraInfo.classList.add("opened")            
+    } else if(extraInfo.classList.contains("opened")) { 
+        icon.classList.remove("up")
+        icon.classList.add("down")
+        extraInfo.classList.remove("opened")
+        extraInfo.classList.add("closed")
     }
 }
