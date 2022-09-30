@@ -8,21 +8,26 @@
 
     <title>E-portofolio - Kenneth Baksteen</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- ### CSS ### -->
+    <!-- Custom style -->
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <!-- Bootstrap core -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
+    <!-- Custom fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- Plugin CSS -->
+    <!-- Magnific Popup (to open projects) -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/stylesheet.css" rel="stylesheet">
+    <!-- jQuery Lightslider -->
+    <link type="text/css" rel="stylesheet" href="vendor/light-slider/css/lightslider.css"/>        
+    <!-- ########### -->
     
+    <!-- Tab page icon -->
     <link rel="icon" type="image/png" href="img/favicon.png">
+    
+    <!-- MIT License of the template used -->
+    <link href="LICENSE" rel="license">
   </head>
 
   <body id="page-top">
@@ -53,12 +58,12 @@
     <!-- Header -->
     <header class="masthead bg-secondary text-white text-center">
       <div class="container">
-        <img style="border-radius: 100%; width: 350px; height: 350px;" class="img-fluid mb-5 d-block mx-auto profileimage" src="img/Me.jfif" alt="Profile picture of me">
+        <img class="img-fluid mb-5 d-block mx-auto profileimage" src="img/Me.jfif" alt="Profile picture of me">
         <h1 class="text-uppercase mb-0">Welcome</h1>
         <hr class="star-dark">
         <h2 class="font-weight-light mb-0">Master in de Toegepaste Informatica</h2>
-        <h3 class="lead" style="margin-top: 15px">My name is Kenneth Baksteen and I recently graduated as Master in de Toegepaste Informatica.</h3>
-        <h3 class="lead">On this website I give an overview of me and the projects I created.</h3>
+        <h3 class="lead">My name is Kenneth Baksteen and I recently graduated as Master in de Toegepaste Informatica.</h3>
+        <h3 class="lead">On this website I give an overview of myself and the projects I created.</h3>
       </div>
     </header>
 
@@ -68,7 +73,7 @@
         <h2 class="text-center text-uppercase">About</h2>
         <hr class="star-light mb-5">
         <div class="container about-container">
-          <h2 class="font-weight-light mb-0 text-center" style="font-size: 30px; margin-top: 10px">Education</h2>
+          <h3 class="font-weight-light mb-0 text-center">Education</h3>
           <div class="text-center" id="master">
             <p class="lead">2020 - 2022</p>
             <p class="lead">Master in de Toegepaste Informatica</p>
@@ -122,21 +127,17 @@
         </div>
 
         <div class="container" id="cv">
-          <h2 class="font-weight-light mb-0 text-center" style="font-size: 30px">Curriculum Vitae</h2>
+          <h3 class="font-weight-light mb-0 text-center">Curriculum Vitae</h3>
         </div>
-        <div class="row justify-content-center" style="margin-top: 20px">
-          <div class="text-center col-md-2">
-            <a class="btn btn-xl btn-primary" style="width: 100%" href="files/CV_KennethBaksteen_Nederlands.pdf" target="_blank">
-              <i class="fa fa-file mr-2"></i>
-              Dutch
-            </a>
-          </div>
-          <div class="text-center col-md-2" style="width: 100%">
-            <a class="btn btn-xl btn-primary" href="files/CV_KennethBaksteen_Engels.pdf" target="_blank">
-              <i class="fa fa-file mr-2"></i>
-              English
-            </a>
-          </div>
+        <div class="cv-download">
+          <a class="btn btn-xl btn-primary" href="documents/CV_KennethBaksteen_Nederlands.pdf" target="_blank">
+            <i class="fa fa-file mr-2"></i>
+            Dutch
+          </a>
+          <a class="btn btn-xl btn-primary" href="documents/CV_KennethBaksteen_Engels.pdf" target="_blank">
+            <i class="fa fa-file mr-2"></i>
+            English
+          </a>
         </div>
       </div>
     </section>
@@ -144,48 +145,89 @@
     <!-- Projecten Grid Section -->
     <section class="portfolio bg-secondary" id="projecten">
       <div class="container">
-        <h2 class="text-center text-uppercase mb-0">Projecten</h2>
+        <h2 class="text-center text-uppercase mb-0">My Biggest Projects</h2>
         <hr class="star-dark mb-5">
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+        <div class="row justify-content-center">
+          <div class="portfolio-item col-md-6 col-lg-4">
+              <p>First Website</p>
+              <div class="portfolio-item-caption">
+                <a class="portfolio-link" href="#portfolio-modal-1">
                   <i class="fa fa-search-plus fa-3x"></i>
-                </div>
+                </a>  
               </div>
-              <img class="img-fluid" src="img/portfolio/Yahtzee.PNG" alt="">
-            </a>
+              <img class="img-fluid" src="img/portfolio/Starsii.png" alt="">
           </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/SerieKingdom.PNG" alt="">
-            </a>
+          <div class="portfolio-item col-md-6 col-lg-4">
+              <p>Yahtzee</p>
+	          <div class="portfolio-item-caption">
+	            <a class="portfolio-link" href="#portfolio-modal-2">
+	              <i class="fa fa-search-plus fa-3x"></i>
+	            </a>  
+	          </div>
+	          <img class="img-fluid" src="img/portfolio/Yahtzee.PNG" alt="">
           </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+          <div class="portfolio-item col-md-6 col-lg-4">
+              <p>Reversi</p>
+              <div class="portfolio-item-caption">
+	            <a class="portfolio-link" href="#portfolio-modal-3">
                   <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/IoToilet.PNG" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
+	            </a>
               </div>
               <img class="img-fluid" src="img/portfolio/Reversi.PNG" alt="">
-            </a>
+          </div>
+          <div class="portfolio-item col-md-6 col-lg-4">
+              <p>SerieKingdom</p>
+              <div class="portfolio-item-caption">
+	            <a class="portfolio-link" href="#portfolio-modal-4">
+                  <i class="fa fa-search-plus fa-3x"></i>
+	            </a>
+              </div>
+              <img class="img-fluid" src="img/portfolio/SerieKingdom.PNG" alt="">
+          </div>
+          <div class="portfolio-item col-md-6 col-lg-4">
+              <p>IoToilet</p>
+              <div class="portfolio-item-caption">
+	            <a class="portfolio-link" href="#portfolio-modal-5">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </a>
+              </div>
+              <img class="img-fluid" src="img/portfolio/IoToilet.PNG" alt="">
+          </div>
+          <div class="portfolio-item col-md-6 col-lg-4">
+              <p>Android Breathing App</p>
+              <div class="portfolio-item-caption">
+                <a class="portfolio-link" href="#portfolio-modal-6">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </a>
+              </div>
+              <img class="img-fluid" src="img/portfolio/Breath_1.png" alt="">
+          </div>
+          <div class="portfolio-item col-md-6 col-lg-4">
+              <p>Blockr</p>
+              <div class="portfolio-item-caption">
+                <a class="portfolio-link" href="#portfolio-modal-7">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </a>
+              </div>
+              <img class="img-fluid" src="img/portfolio/Blockr.png" alt="">
+          </div>
+          <div class="portfolio-item col-md-6 col-lg-4">
+              <p>Chess Engine</p>
+              <div class="portfolio-item-caption">
+                <a class="portfolio-link" href="#portfolio-modal-8">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </a>
+              </div>
+              <img class="img-fluid" src="img/portfolio/ChessEngine.jpg" alt="">
+          </div>
+          <div class="portfolio-item col-md-6 col-lg-4">
+              <p>Master's thesis</p>
+              <div class="portfolio-item-caption">
+                <a class="portfolio-link" href="#portfolio-modal-9">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </a>
+              </div>
+              <img class="img-fluid" src="img/portfolio/Thesis_virtual_environment.png" alt="">
           </div>
         </div>
       </div>
@@ -221,7 +263,7 @@
 
     <div class="copyright py-4 text-center text-white">
       <div class="container">
-        <small>Copyright &copy; Kenneth Baksteen - Freelancer Template 2018</small>
+        <small>&copy; 2018 Kenneth Baksteen</small>
       </div>
     </div>
 
@@ -242,15 +284,43 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-uppercase mb-0">Yahtzee</h2>
+              <h2 class="text-uppercase mb-0">First Website: S.T.A.R.S. II</h2>
               <hr class="star-light mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/Yahtzee.PNG" alt="">
-              <p class="mb-5">Yahtzee is een spel dat we hebben ontwikkeld voor het vak OO Ontwerpen.
-                We hebben dit spel geschreven in Java en hebben hier ook een user interface voor geschreven.</p>
-              <p>Repository: <a href="https://github.com/ucll-ooo-2017/ooo-part-2-ooo_class56_team04bis">Yahtzee</a></p>
+              <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Year</th>
+                    <th>Backend</th>
+                    <th>Frontend</th>
+                    <th>Team</th>
+                </tr>
+                <tr>
+                    <td>Web Development 1</td>
+                    <td>1st Bachelor</td>
+                    <td>/</td>
+                    <td>HTML &amp; CSS</td>
+                    <td>Solo</td>
+                </tr>
+              </table>
+              <ul id="lightSlider">
+                <li>
+	                <img class="img-fluid" src="img/portfolio/Starsii.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Starsii_2.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Starsii_3.png" alt="">
+                </li>
+              </ul>
+              <p>
+              For the course Web Development 1, I had to create a website using only front-end development. I created this website for a client using HTML and CSS.
+              For the content of the website, I planned meetings with the client and I created wireframes to present an idea of how the website was going to look like.
+              </p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
-                Close Project</a>
+                Close Project
+              </a>
             </div>
           </div>
         </div>
@@ -266,15 +336,38 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-uppercase mb-0">SerieKingdom</h2>
+              <h2 class="text-uppercase mb-0">Yahtzee</h2>
               <hr class="star-light mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/SerieKingdom.PNG" alt="">
-              <p class="mb-5">Deze webapplicatie heb ik ontworpen voor de vakken IP-minor en IP-major. Deze site heeft als doel om je gegevens bij te houden over de series die je volgt.
-              Zo kan je nieuwe series toevoegen en kan je aanduiden welk seizoen en episode je als volgt dient te kijken. Zo vergeet je nooit welke series je momenteel kijkt en waar je zit.</p>
-              <p>Repository: <a href="https://github.com/ucll-ip-2018/project-internet-programming-2018-KennethBaksteen-r0625099">SerieKingdom</a></p>
+              <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Year</th>
+                    <th>Backend</th>
+                    <th>Frontend</th>
+                    <th>Team</th>
+                </tr>
+                <tr>
+                    <td>OO Programmeren</td>
+                    <td>2nd Bachelor</td>
+                    <td>Java</td>
+                    <td>JavaFX</td>
+                    <td>3 people</td>
+                </tr>
+              </table>
+              <ul id="lightSlider">
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Yahtzee.PNG" alt="">
+                </li>
+              </ul>
+              <p>
+              Yahtzee is game that we developed for the course OO Ontwerpen. 
+              For this project we had to use the SO(L)ID design principles and several design patterns such as Refractoring, State, Strategy, Observer, etc.
+              We just had to create a very simple user interface, which was completed using JavaFX.
+              </p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
-                Close Project</a>
+                Close Project
+              </a>
             </div>
           </div>
         </div>
@@ -290,18 +383,37 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-uppercase mb-0">IoToilet</h2>
+              <h2 class="text-uppercase mb-0">Reversi</h2>
               <hr class="star-light mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/IoToilet.PNG" alt="">
-              <p class="mb-5">Voor het vak project 2 dat het 2e semester van fase 2 draaide rond Internet of Things hebben we de IoToilet ontworpen met gebruik van een Raspberry Pi.
-              Deze applicatie gaat na of er een persoon op het toilet zit en gaat indien wel muziek beginnen spelen. Er is ook een knop om het volgende liedje af te spelen.
-              Vervolgens houden we alle toiletbezoeken bij samen met hun duur zodat we hier allerlei statistieken uit kunnen halen. De voornaamste reden dat we dit bijhouden is zodat
-              de kuisploeg efficiënt kan ingezet worden. Indien er dus een toilet niet gebruikt is moet hier ook geen toiletpapier, ... bijgevuld worden.</p>
-              <p>Repository: <a href="https://github.com/BramProsse-r0663019/ProjectWeek_2_2018_IOToilet">IoToilet</a></p>
-              <p>Website: <a href="http://193.191.176.127:8080/index.htm">IoToilet</a></p>
+              <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Year</th>
+                    <th>Backend</th>
+                    <th>Frontend</th>
+                    <th>Team</th>
+                </tr>
+                <tr>
+                    <td>Programming Visual User Environments</td>
+                    <td>2nd Bachelor</td>
+                    <td>C#</td>
+                    <td>C#</td>
+                    <td>Solo</td>
+                </tr>
+              </table>
+              <ul id="lightSlider">
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Reversi.PNG" alt="">
+                </li>
+              </ul>
+              <p>
+              Reversi is a boardgame  waarbij je moet proberen de andere zijn kleur over te nemen door deze te omsluiten.
+              Dit spel ben ik momenteel aan het ontwerpen voor het vak Programeren van Visuele Gebruiksomgevingen. Ik schrijf dit spel in C# en ontwerp hier ook een User Interface voor.
+              </p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
-                Close Project</a>
+                Close Project
+              </a>
             </div>
           </div>
         </div>
@@ -317,30 +429,366 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-uppercase mb-0">Reversi</h2>
+              <h2 class="text-uppercase mb-0">SerieKingdom</h2>
               <hr class="star-light mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/Reversi.PNG" alt="">
-              <p class="mb-5">Reversi is een gezelschapspel waarbij je moet proberen de andere zijn kleur over te nemen door deze te omsluiten.
-              Dit spel ben ik momenteel aan het ontwerpen voor het vak Programeren van Visuele Gebruiksomgevingen. Ik schrijf dit spel in C# en ontwerp hier ook een User Interface voor.</p>
-              <p>Repository: <a href="https://github.com/ucll-vgo-1718/reversi-KennethBaksteen-r0625099">Reversi</a></p>
+              <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Year</th>
+                    <th>Backend</th>
+                    <th>Frontend</th>
+                    <th>Team</th>
+                </tr>
+                <tr>
+                    <td>OO Programmeren</td>
+                    <td>2nd Bachelor</td>
+                    <td>Java</td>
+                    <td>JavaFX</td>
+                    <td>3 people</td>
+                </tr>
+              </table>
+              <ul id="lightSlider">
+                <li>
+                    <img class="img-fluid" src="img/portfolio/SerieKingdom.PNG" alt="">
+                </li>
+              </ul>
+              <p>
+              Deze webapplicatie heb ik ontworpen voor de vakken IP-minor en IP-major. Deze site heeft als doel om je gegevens bij te houden over de series die je volgt.
+              Zo kan je nieuwe series toevoegen en kan je aanduiden welk seizoen en episode je als volgt dient te kijken. Zo vergeet je nooit welke series je momenteel kijkt en waar je zit.
+              </p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
-                Close Project</a>
+                Close Project
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Bootstrap core JavaScript -->
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-uppercase mb-0">IoToilet</h2>
+              <hr class="star-light mb-5">
+              <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Year</th>
+                    <th>Backend</th>
+                    <th>Frontend</th>
+                    <th>Team</th>
+                </tr>
+                <tr>
+                    <td>OO Programmeren</td>
+                    <td>2nd Bachelor</td>
+                    <td>Java</td>
+                    <td>JavaFX</td>
+                    <td>3 people</td>
+                </tr>
+              </table>
+              <ul id="lightSlider">
+                <li>
+                    <img class="img-fluid" src="img/portfolio/IoToilet.PNG" alt="">
+                </li>
+              </ul>
+              <p>
+              Voor het vak project 2 dat het 2e semester van fase 2 draaide rond Internet of Things hebben we de IoToilet ontworpen met gebruik van een Raspberry Pi.
+              Deze applicatie gaat na of er een persoon op het toilet zit en gaat indien wel muziek beginnen spelen. Er is ook een knop om het volgende liedje af te spelen.
+              Vervolgens houden we alle toiletbezoeken bij samen met hun duur zodat we hier allerlei statistieken uit kunnen halen. De voornaamste reden dat we dit bijhouden is zodat
+              de kuisploeg efficiënt kan ingezet worden. Indien er dus een toilet niet gebruikt is moet hier ook geen toiletpapier, ... bijgevuld worden.
+              </p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-uppercase mb-0">Android Breating App</h2>
+              <hr class="star-light mb-5">
+              <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Year</th>
+                    <th>Backend</th>
+                    <th>Frontend</th>
+                    <th>Team</th>
+                </tr>
+                <tr>
+                    <td>Graduation Project</td>
+                    <td>3rd Bachelor</td>
+                    <td>React Native</td>
+                    <td>React Native</td>
+                    <td>3 people</td>
+                </tr>
+              </table>
+              <ul id="lightSlider">
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Breath_welcome.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Breath_home.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Breath_menu.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Breath_start.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Breath_1.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Breath_2.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Breath_history.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Breath_config.png" alt="">
+                </li>
+              </ul>
+              <p>
+              For my graduation project in my bachelor, I worked together with 2 other students on an Android application. 
+              The purpose of this application was to help people who experience a lot of stress or breathing problems. 
+              This was achieved by making the user follow a specific breathing trajectory so that he was able to regain control over his breathing. 
+              The user had to for example breath in during 6 seconds, then wait 2 seconds and breath out again for 4 seconds. 
+              All this details could be manually changed in a configuration screen.
+              </p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Portfolio Modal 7 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-7">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-uppercase mb-0">Blockr</h2>
+              <hr class="star-light mb-5">
+              <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Year</th>
+                    <th>Backend</th>
+                    <th>Frontend</th>
+                    <th>Team</th>
+                </tr>
+                <tr>
+                    <td>Software Design</td>
+                    <td>Switching Program</td>
+                    <td>Java</td>
+                    <td>Java</td>
+                    <td>4 people</td>
+                </tr>
+              </table>
+              <ul id="lightSlider">
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Blockr.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Blockr_2.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Blockr_3.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Blockr_domain.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Blockr_sequence.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Blockr_uml_overview.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Blockr_uml_robotgame_overview.png" alt="">
+                </li>
+              </ul>
+              <p>
+              For this project, we had to create a game which looks a lot like Scratch using only Java. For the user interface we were only allowed to use Java and a given CanvasWindow.
+              The total duration of the project was divided into 3 iterations and during each iteration we had to extend the game with new features. 
+              During the last iteration we created a user interface where a specific game and a specific way of controlling the game could be chosen (keyboard or buttons on the interface).
+              We also created a simple version of Minesweeper to test this interface.
+              When developing the game we had to use refactorings and several design patterns like for example Strategy, Factory, Facade, Composite, Decorator and many more. 
+              We also had to apply GRASP which stands for Generalized Responsibility Assignment Software Patterns/Principles containing for example low coupling and high cohesion programming.
+              The project consisted of more than just the program since we also had to write for example our own use cases, sequence diagrams and UML diagrams.
+              Moreover we had to write our own test cases to achieve a very good code coverage.
+              </p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Portfolio Modal 8 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-8">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-uppercase mb-0">Chess Engine</h2>
+              <hr class="star-light mb-5">
+              <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Year</th>
+                    <th>Backend</th>
+                    <th>Frontend</th>
+                    <th>Team</th>
+                </tr>
+                <tr>
+                    <td>Comparative Programming Languages</td>
+                    <td>Master</td>
+                    <td>C++</td>
+                    <td>/</td>
+                    <td>Solo</td>
+                </tr>
+              </table>
+              <ul id="lightSlider">
+                <li>
+                    <img class="img-fluid" src="img/portfolio/ChessEngine.jpg" alt="">
+                </li>
+              </ul>
+              <p>
+              A chess engine is a computer program which analyzes a chess game by for example estimating the chance that both players have to win the game.
+              It also calculates all the possible moves for a given player and gives these moves a score according to how good it is for the current player.
+              For the course Comparative Programming Languages, I wrote my own chess engine using C++. The chess engine was tested on chess puzzles going from easy to hard.
+              </p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Portfolio Modal 9 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-9">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h5 class="text-uppercase mb-0">Toward accurate robotic simulation by calibration</h5>
+              <h6 class="mt-1">A research about the accuracy and the calibration of the TurtleBot3 simulation by Gazebo</h6>
+              <hr class="star-light mb-5">
+              <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Year</th>
+                    <th>Backend</th>
+                    <th>Frontend</th>
+                    <th>Team</th>
+                </tr>
+                <tr>
+                    <td>Master's Thesis</td>
+                    <td>Master</td>
+                    <td>ROS &amp; Python</td>
+                    <td>Gazebo</td>
+                    <td>Solo</td>
+                </tr>
+              </table>
+              <ul id="lightSlider">
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Thesis_virtual_environment.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Thesis_map.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Thesis_class_diagram.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Thesis_turtlebot.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Thesis_gazebo.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Thesis_gazebo_spread.png" alt="">
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/portfolio/Thesis_gazebo_calibration.png" alt="">
+                </li>
+                <li>
+                    <video class="img-fluid" controls>
+                        <source src="img/portfolio/Thesis_demo.MOV" type="video/mp4">
+                    </video>
+                </li>
+              </ul>
+              <p>
+              Nowadays more and more robots are released on the market and we become more and more dependent of them. Think about for example automated lawn mowers and vacuum cleaners.
+              All these robots are developed and tested before they are released and this can be done by either using a robot's simulation or the real robot itself. 
+              Using a simulation offers several advantages. It is for example cheaper, safer and faster, but there is also one important question that arises.
+              <b>How good do the results of running a program on a simulation represent the results of running the same program on the real robot?</b> 
+              In the first part of my thesis I investigated this question for a specific example of a robot, the TurtleBot3 and the simulation of this robot provided by Gazebo.
+              I created several programs and I ran these programs on both the simulation and the real robot. After looking at the results, I was able to calculate a deviation of 1.15%.
+              In the second part of my thesis, I investigated a way to improve the deviation by calibrating the simulation. I was able to decrease the deviation to 0.83%.              
+              Some graphs can be found in the slider above followed by a short demo of an experiment.
+              </p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ### JavaScript ### -->
+    <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
+    <!-- jQuery Easing -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Bootstrap core -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Magnific Popup -->
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Custom scripts for this template -->
+    <!-- jQuery LightSlider -->
+    <script src="vendor/light-slider/js/lightslider.js"></script>
+    <!-- Custom scripts -->
     <script src="js/javascript.js"></script>
   </body>
 </html>
